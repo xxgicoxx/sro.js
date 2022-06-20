@@ -36,5 +36,4 @@ const correios = new Correios();
 * [xxgicoxx](https://github.com/xxgicoxx)
 
 # Acknowledgments
-* [FlatIcon](https://www.flaticon.com/)
-* [Link Correios](https://www.linkcorreios.com.br)
+* [Correios](https://www.correios.com.br/)
