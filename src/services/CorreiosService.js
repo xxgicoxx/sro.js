@@ -6,8 +6,8 @@ const { constants } = require('../utils');
 class CorreiosService {
   async track(code) {
     try {
-      if (!code || code.length < 13 || code.length > 13) {
-        throw new Error(constants.INVALID_CODE);
+      if (!code || code.length < constants.CODE_MIN || code.length > constants.CODE_MAX) {
+        throw new Error(constants.CODE_INVALID);
       }
 
       const response = await fetch(`${correiosConfig.api}${code}`);
