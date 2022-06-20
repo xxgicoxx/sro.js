@@ -1,7 +1,7 @@
 {
   "name": "sro.js",
   "displayName": "sro.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js package for track Correios objects.",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
   "license": "MIT",
