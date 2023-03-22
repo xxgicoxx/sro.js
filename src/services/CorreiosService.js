@@ -7,13 +7,13 @@ class CorreiosService {
   async track(code) {
     try {
       if (!code || code.length < constants.CODE_MIN || code.length > constants.CODE_MAX) {
-        throw new Error(constants.ERROR_INVALID_CODE);
+        throw new Error(constants.MESSAGE_INVALID_CODE);
       }
 
       const response = await fetch(`${correiosConfig.api}${code}`);
 
       if (!response.ok) {
-        throw new Error(constants.ERROR_TRY_AGAIN);
+        throw new Error(constants.MESSAGE_ERROR_TRY_AGAIN);
       }
 
       const json = await response.json();
